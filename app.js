@@ -17,7 +17,7 @@ var app = http.createServer(function (req, res) {
       res.end();
     });
   } else {
-    fs.readFile(__dirname + '/src/app/home/home.component.html', function (err, data) {
+    fs.readFile(__dirname + '/src/index.html', function (err, data) {
       if (err) {
         res.writeHead(404, {'Content-Type': 'text/plain'});
         res.write('Error 404: Resource not found.');
