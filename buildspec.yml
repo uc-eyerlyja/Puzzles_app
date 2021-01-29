@@ -20,7 +20,7 @@ phases:
   build:
     commands:
       - echo Build dtarted on 'date'
-      - ng build --proud --aot
+      - ng build --prod --aot
   post_build:
     commands:
       # Remove existing node_modules to clear dev dependencies
